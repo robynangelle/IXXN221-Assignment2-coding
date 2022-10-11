@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 200vh;
+    display: grid;
+    grid-template-columns: 100;
+    grid-template-rows: 8% 30% auto 5%; 
+    grid-template-areas: 
+            "header"
+            "headboard"
+            "main"
+            "footer";}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;}
+h2{
+    position:absolute;
+    top: 20px;
+    left: 160px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BC983B;}
+    
+h3{
+    text-align: center;
+    word-spacing: 35px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;}
+
+p{
+    text-align: center;
+    word-spacing: 35px;
+    color: #2E8FE9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+header{
+    grid-area: header; 
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 10% 30% 46% 3% 3% 3% 5% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav1 nav2 nav3 nav4 nav5 nav6 nav7";}
+
+
+/*taskbar/headboard for all websites */
+nav:nth-of-type(1) { /*logo of the websiter*/
+    grid-area: nav1;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+nav:nth-of-type(2) { /*area for the search*/
+    grid-area: nav2;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;}
+nav:nth-of-type(3) { /*area for the friends*/
+    grid-area: nav3;
+    background-color: #FFFFFF;
+    display: flex-end;
+    justify-content: flex-end;
+    align-items: center;}
+nav:nth-of-type(4) { /*area for the chat messages*/
+    grid-area: nav4;
+    background-color: #FFFFFF;
+    display: flex-end;
+    justify-content: flex-end;
+    align-items: center;}
+nav:nth-of-type(5) { /*area for the notifications*/
+    grid-area: nav5;
+    background-color: #FFFFFF;
+    display: flex-end;
+    justify-content: flex-end;
+    align-items: center;}
+nav:nth-of-type(6) { /*area for the log out*/
+    grid-area: nav6;
+    background-color: #FFFFFF;
+    display: flex-end;
+    justify-content: flex-end;
+    align-items: center;}
+nav:nth-of-type(7) { /*area for the user's profile picture*/
+    grid-area: nav7;
+    background-color: #FFFFFF;} 
+
+
+main{
+    grid-area: main;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "section1 section2 section3";}
+
+/*from main body for profile websites*/
+section:nth-of-type(1) { /*left side of the profile website which includes the profile picture and status*/
+    grid-area: section1;
+    background-color: #FFFFFF;}
+section:nth-of-type(2) { /*main and center of the profile website that contains the bio information and highlighted stories*/
+    grid-area: section2;
+    background-color: #FFFFFF;}
+section:nth-of-type(3){ /*right side of the profile website which contains the friends lists*/
+    grid-area: section3;
+    background-color: #FFFFFF;}
+
+/*for find friends, friend requests and all friends*/
+category:nth-of-type(1){ /*friends*/
+    grid-area: category1;  
+    background-color: #f6f6f6;
+    height:833px;
+    width: 545px;
+    position: absolute;
+    top: 80px;
+    left: 0px;}
+category:nth-of-type(2){ /*find friends*/
+    grid-area: category2;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 240px;
+    left: 0px;}
+category:nth-of-type(3){ /*friend requests*/
+    grid-area: category3;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 325px;
+    left: 0px;}
+category:nth-of-type(4){ /*all friends*/
+    grid-area: category4;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 420px;
+    left: 0px;}
+
+/*find friends, friend requests and all friends buttons*/
+.fflogo{ /*find friends button*/
+    position: absolute;
+    top: 10px;
+    left: 100px;}
+.frlogo{ /*friend requests button*/
+position:absolute;
+top:15px;
+left:100px;}
+.aflogo{ /*all friends button*/
+position: absolute;
+top:10px;
+left:100px;}
+
+/*find_friends websites*/
+.find_friends{ /*suggested people on the find friends html*/
+    position: absolute;
+    top: 120px;
+    left: 585px;}
+.shane_oman{ /*shane oman's quick profile on suggested find friends*/
+    position: absolute;
+    top: 206px;
+    left: 617px;}
+
+.friend_requests{ /*friend requests from glen coco and amber d'alessio*/
+    position: absolute;
+    top: 120px;
+    left: 585px;}
+
+/*all_friends websites*/
+.all_friends{ /*user's friends*/
+    position: absolute;
+    top: 120px;
+    left: 585px;}
+.regina_link{ /*leads to regina george's profile*/
+    position: absolute;
+    top: 194px;
+    left: 863px;}
+    
+footer{
+    grid-area: footer;
+    background-color: #D9D9D9;}
+
+.square6{
+    position: absolute;
+    top: 590px;
+    left:750px;
+    background-color: #BC983B;
+    border-radius: 0px 0px 10px 10px;}
+
+.square0{ /*transparent black square to mimic overlays for all websites*/
+    position: absolute;
+    top: auto;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.336);}
+
+.square3{
+    position:absolute;
+    top: 620px;
+    left: 750px;    
+    background-color: #2E8FE9;
+    border-radius: 0px 10px 10px 10px;}
+
+.square2{
+    position:absolute;
+    top: 140px;
+    left: 750px;
+    background-color: #ECECEC;
+    border-radius: 10px 10px 10px 10px;}
+
+/*for find friends overlays hen searching for new friends*/
+.soimg{ /*shane oman image for overlay for find friends website*/
+    position:absolute;
+    top: 25px;
+    left: 30px;}
+.gcimg{ /*glen coco image for overlay for find friends website*/
+    position:absolute;
+    top:25px;
+    left:30px;}
+.adimg{ /*amber d'alessio image for overlay for find friends website*/
+    position:absolute;
+    top:25px;
+    left:30px;}
+
+.decline{ /*decline button for shane oman, glen coco and amber d'alessio while finding friends*/
+    position:absolute;
+    top: 40px;
+    left:100px}
+.favorite{ /*favorite button for shane oman, glen coco and amber d'alessio while finding friends*/
+    position:absolute;
+    top:40px;
+    left: 190px;}
+.accept{ /*accept button for shane oman, glen coco and amber d'alessio while finding friends*/
+    position:absolute;
+    top:40px;
+    left:290px;}
+
+/*match with shane oman overlay mimic*/
+.match{ /*match with shane oman overlay*/
+    position:absolute;
+    top: 140px;
+    left: 750px;
+    border-radius: 10px 10px 10px 10px;}
+.accept2{ /*accept button that links to the ten_minute_chat website*/
+    position: absolute;
+    top:492px;
+    left:855px;}
+
+/*send friend request to shane oman overlay mimic*/
+.sfr{ /*send friend request to shane oman overlay*/
+position:absolute;
+top: 140px;
+left: 750px;
+border-radius: 10px 10px 10px 10px;}
+.yes{ /*yes button send_friend_request website*/
+    position: absolute;
+    top:483px;
+    left:880px;}
+
+/*now friends with shane oman overlay mimic*/
+.nf{ /*now friends with shane oman overlay*/
+    position:absolute;
+        top: 140px;
+        left: 750px;
+        border-radius: 10px 10px 10px 10px;}
+.continue{ /*continue button on now friends overlay website*/
+    position: absolute;
+    top:540px;
+    left:815px;}
+
+/*image/button links in the ten_minute_chat website*/
+.timer{ /*ten_minutes img*/
+    position: absolute;
+    top: 100px;
+    left: 1410px;}
+.arrow{ /*arrow button leads to the icebreaker questions*/
+    position: absolute;
+    top: 50px;
+    left: 15px;}
+.chat{ /*chat with shane oman image and damian leigh image*/
+    position:absolute;
+    top:76px;
+    left:345px;}
+.rectangle{ /*blue rectangle on right side of ten_minute_chat for arrow button that leads to icebreaker overlay website*/
+    position: absolute;
+    top: 50px;
+    left: 70px;}
+
+/*question website overlay for the ten_minute_chat website*/
+.icebreakq{ /*icebreaker questions image*/
+    position:absolute;
+    top: 76px;
+    left: 1145px; }
+.exit{ /* exit button on icebreaker question*/
+    position: absolute;
+    top: 90px;
+    left: 1160px;}
+
+.pfp{
+    position:absolute;
+    top: 225px;
+    left: 208px;}
+
+.square{
+    height:300px;
+    width: 263px;
+    border-radius: 0px 0px 25px 25px;
+
+    position: absolute;
+    top: 620px;
+    left: 208px;
+    background-color: #D9D9D9;}
+
+.edit{
+    position:absolute;
+    top: 870px;
+    left: 417px;}
+
+.status{
+    position:absolute;
+    top: 650px;
+    left: 290px;
+
+    font-size: 150%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #747474;}
+
+.quote{
+    position:absolute;
+    top: 720px;
+    left: 250px;
+    width: 180px;
+    text-align: center;
+
+    font-size: 150%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #747474;}
+
+/*other social media links for profiles*/
+.twitter{
+    position:absolute;
+    top: 955px;
+    left: 385px;}
+.facebook{
+    position:absolute;
+    top: 955px;
+    left: 308px;}
+.instagram{
+    position:absolute;
+    top: 955px;
+    left: 230px;}
+
+/*friends button image for nav3*/
+.friends{
+    position: absolute;
+    top: 380px;
+    left: 1450px;}
+
+.regina{
+    position: absolute;
+    top:445px;
+    left: 1468px;}
+
+/*chat overlay for all websites*/
+.chat_messages{
+    position:absolute;
+    top: 75px;
+    left: 1614px;}
+.damian_chat{
+    position:absolute;
+    top: 180px;
+    left: 1624px;}
+
+/*notifcation overlay for all websites*/
+.notif{
+    position:absolute;
+    top: 75px;
+    left: 1613px;}
+.damian_notif{
+    position:absolute;
+    top: 154px;
+    left: 1635px;}
+
